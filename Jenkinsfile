@@ -23,7 +23,7 @@ pipeline {
         stage("Check out") {
             steps {
                 script {
-                    git branch: 'master', url: 'https://github.com/ranjit4github/LoginWebApp.git';
+                    git branch: 'main', url: 'https://github.com/vamshibitla/fullstack-bank.git';
                 }
             }
         }
@@ -82,7 +82,7 @@ pipeline {
             }
             steps{
                 script {
-                    git branch: 'master', url: 'https://github.com/ranjit4github/Ansible_Demo_Project.git';
+                    git branch: 'main', url: 'https://github.com/vamshibitla/fullstack-bank.git';
                 }
                 sh '''
                     ansible-playbook -e vers=${BUILD_NUMBER} roles/site.yml
